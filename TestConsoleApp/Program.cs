@@ -10,11 +10,11 @@ namespace TestConsoleApp
     {
         static void Main(string[] args)
         {
-            var lst = HolidaysLib.HolidaysLib.GetGreekHolidays(DateTime.Now.Year, true, true);
+            var lst = HolidaysLib.GetGreekHolidays(DateTime.Now.Year, true, true);
 
             foreach (var item in lst)
             {
-                Console.WriteLine(item.Key.ToLongDateString() + ": " + item.Value);
+                Console.WriteLine(item.Key.ToString("dd-MM-yyyy") + ": " + item.Value);
             }
             Console.ReadKey();
         }
