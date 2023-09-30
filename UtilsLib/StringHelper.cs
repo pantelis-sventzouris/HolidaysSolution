@@ -10,12 +10,8 @@ namespace UtilsLib
     {
         public static string GetUnicodeString(string sourceText)
         {
-            string targetText = String.Empty;
-
             byte[] bytes = Encoding.GetEncoding("windows-1253").GetBytes(sourceText);
-            targetText = Encoding.GetEncoding("windows-1253").GetString(bytes);
-
-            return targetText;
+            return Encoding.GetEncoding("windows-1253").GetString(bytes);
         }
 
     }
