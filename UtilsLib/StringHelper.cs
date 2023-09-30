@@ -16,8 +16,6 @@ namespace UtilsLib
             targetText = Encoding.GetEncoding("windows-1253").GetString(bytes);
 
             return targetText;
-
-            //return sourceText;
         }
 
     }
